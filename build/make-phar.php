@@ -10,7 +10,7 @@ if(file_exists($file_phar)){
 $files = [];
 $dir = getcwd().DIRECTORY_SEPARATOR;
 
-$exclusions = ["github",".gitignore","composer.json","composer.lock","build",".git"];
+$exclusions = ["github",".gitignore","composer.json","composer.lock","build",".git",".vscode"];
 
 foreach(new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir)) as $path => $file){
 	$bool = true;
